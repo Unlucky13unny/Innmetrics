@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnMetrics</title>
+  <link rel="icon" type="image/png" href="/images/innmetrics_logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .logo {
+      width: clamp(250px, 40vw, 600px);
+      height: auto;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeIn 2s 1s forwards;
+    }
+
+    .message {
+      opacity: 0;
+      animation: fadeIn 2s 2s forwards;
+      max-width: 700px;
+    }
+
+    .headline {
+      font-size: clamp(1.4rem, 3vw, 2.5rem);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .coming-soon {
+      font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+      color: #888;
+      margin-top: 10px;
+    }
+
+    .contact {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #222;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    .social-links a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #e84343;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="/images/innmetrics_logo.png" alt="InnMetrics Logo" class="logo" />
+
+  <div class="message">
+    <div class="headline">Your Data. Your Lens.</div>
+    <div class="tagline">
+      InnMetrics helps independent hotel owners and operators monitor, analyze, and understand their revenue trends — without vendor lock-in or manual guesswork.
+    </div>
+    <div class="coming-soon">Launching soon. Stay connected:</div>
+
+    <div class="contact">
+      <div class="social-links">
+        <a href="mailto:contact@innmetrics.com" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/innmetrics" target="_blank" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/innmetrics" target="_blank" title="Twitter/X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
 
